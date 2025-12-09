@@ -1,6 +1,14 @@
 ---
-title: "Welcome to My Website"
+title: "Your Site Title"
+subtitle: "A short subtitle or description"
+format: html
 ---
+
+::: {.title-slide}
+<h1 class="site-title">Your Site Title</h1>
+<p class="site-subtitle">A short subtitle or description</p>
+<img src="assets/images/logo-placeholder.svg" alt="Logo" class="site-logo" />
+:::
 
 ## Hello!
 

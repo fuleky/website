@@ -3,15 +3,11 @@ project:
   output-dir: _site
 
 website:
-  title: "Personal Website"
+  title: "Your Site Title"
   navbar:
-    background: primary
-    search: true
-    left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
+    right:
+      - text: "About"
+        href: about.qmd
 
 format:
   html:
