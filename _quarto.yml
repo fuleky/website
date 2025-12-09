@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
 
 website:
   title: "Personal Website"
@@ -18,6 +18,6 @@ format:
     theme: 
       light: flatly
       dark: darkly
-    css: styles.css
+    css: styles/site.scss
     toc: true
     toc-location: right
