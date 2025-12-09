@@ -1,37 +1,33 @@
-name: Deploy to GitHub Pages
+# NOTE: This file appears to be a .delete backup in the repository.
+# If you intend to keep it active, update the deprecated action reference as shown below.
+name: Deploy site (legacy / backup)
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
+
+      - name: Build site
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y quarto
+          quarto render
+
       - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: '.'
-      
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          path: _site
