@@ -1,16 +1,23 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "Your Site Title"
+  title: "Personal Website"
   navbar:
-    right:
-      - text: "About"
-        href: about.qmd
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
 
 format:
   html:
-    css:
-      - styles/site.scss
-
-# Optional: other site settings can remain unchanged
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-location: right
