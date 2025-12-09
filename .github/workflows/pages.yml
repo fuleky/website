@@ -1,52 +1,44 @@
-name: Build and deploy Quarto site
+name: Deploy site to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Quarto CLI
-        run: |
-          wget https://quarto.org/download/latest/quarto-linux-amd64.deb -O quarto.deb
-          sudo dpkg -i quarto.deb || sudo apt-get -f install -y
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
 
-      - name: Render site
+      - name: Install quarto (if needed)
+        run: |
+          # adjust if you install quarto differently; keep the step that renders your site
+          sudo apt-get update
+          sudo apt-get install -y quarto
+
+      - name: Render site with Quarto
         run: quarto render
 
-      - name: Setup Pages (prepares the pages environment)
+      - name: Upload artifact (site)
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+
+      - name: Configure Pages
         uses: actions/configure-pages@v4
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./_site
+          path: _site
 
-  deploy:
-    needs: build
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: Deploy to Pages
         uses: actions/deploy-pages@v1
