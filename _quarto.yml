@@ -1,0 +1,16 @@
+project:
+  type: website
+
+website:
+  title: "Your Site Title"
+  navbar:
+    right:
+      - text: "About"
+        href: about.qmd
+
+format:
+  html:
+    css:
+      - styles/site.scss
+
+# Optional: other site settings can remain unchanged

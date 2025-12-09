@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+## About This Site
+
+This is a Quarto website with custom styling.
+
+You can customize this page with information about your site, project, or organization.

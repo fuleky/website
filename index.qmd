@@ -1,0 +1,17 @@
+---
+title: "Your Site Title"
+subtitle: "A short subtitle or description"
+format: html
+---
+
+::: {.title-slide}
+
+# {.site-title}
+
+{{< meta title >}}
+
+<p class="site-subtitle">{{< meta subtitle >}}</p>
+
+<img src="assets/images/logo-placeholder.svg" class="site-logo">
+
+:::
