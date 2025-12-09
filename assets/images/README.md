@@ -7,7 +7,7 @@ This directory contains the site logo placeholder.
 
 ## To Replace with Your Own Logo
 1. Add your logo image file (PNG, SVG, or other web-compatible format) to this directory
-2. Name it `logo-placeholder.png` (or update the reference in `index.qmd` if using a different name/format)
+2. Either replace `logo-placeholder.svg` with your logo, or add a new file and update the reference in `index.qmd`
 3. Recommended size: approximately 110px wide for best results
 4. The logo will appear in the bottom-right corner of the title slide with 95% opacity
 
