@@ -1,0 +1,20 @@
+---
+title: "Welcome to My Website"
+---
+
+## Hello!
+
+Welcome to my personal website. This site was created using [Quarto](https://quarto.org), an open-source scientific and technical publishing system.
+
+### About This Site
+
+This website showcases my work, projects, and interests. Feel free to explore the different sections to learn more about me and what I do.
+
+### Quick Links
+
+- [About Me](about.qmd) - Learn more about my background and interests
+- [Quarto Documentation](https://quarto.org/docs/) - Learn more about Quarto
+
+---
+
+*Last updated: December 2025*

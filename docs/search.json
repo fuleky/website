@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "This is the about page for my personal website. Here you can share information about yourself, your interests, and your work."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "This is the about page for my personal website. Here you can share information about yourself, your interests, and your work."
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About Me",
+    "section": "Interests",
+    "text": "Interests\n\nTechnology\nData Science\nWeb Development\nOpen Source"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\nFeel free to reach out if you’d like to connect!\n\nThis website is built with Quarto and hosted on GitHub Pages."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Website",
+    "section": "",
+    "text": "Welcome to my personal website. This site was created using Quarto, an open-source scientific and technical publishing system.\n\n\nThis website showcases my work, projects, and interests. Feel free to explore the different sections to learn more about me and what I do.\n\n\n\n\nAbout Me - Learn more about my background and interests\nQuarto Documentation - Learn more about Quarto\n\n\nLast updated: December 2025"
+  },
+  {
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "Welcome to My Website",
+    "section": "",
+    "text": "Welcome to my personal website. This site was created using Quarto, an open-source scientific and technical publishing system.\n\n\nThis website showcases my work, projects, and interests. Feel free to explore the different sections to learn more about me and what I do.\n\n\n\n\nAbout Me - Learn more about my background and interests\nQuarto Documentation - Learn more about Quarto\n\n\nLast updated: December 2025"
+  }
+]
