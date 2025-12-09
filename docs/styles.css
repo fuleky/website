@@ -1,0 +1,44 @@
+/* Custom CSS for personal website */
+
+/* Add some custom styling to make the site more personal */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style the homepage welcome section */
+h1 {
+  color: #2c3e50;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 1.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Add some spacing and style to links */
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style the navigation bar links */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Add some spacing to content */
+.quarto-title {
+  margin-bottom: 2em;
+}
+
+/* Style for quick links section */
+ul {
+  line-height: 2;
+}

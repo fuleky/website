@@ -1,0 +1,22 @@
+---
+title: "About Me"
+---
+
+## Background
+
+This is the about page for my personal website. Here you can share information about yourself, your interests, and your work.
+
+## Interests
+
+- Technology
+- Data Science
+- Web Development
+- Open Source
+
+## Contact
+
+Feel free to reach out if you'd like to connect!
+
+---
+
+This website is built with [Quarto](https://quarto.org) and hosted on GitHub Pages.
