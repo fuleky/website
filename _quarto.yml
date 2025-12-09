@@ -11,5 +11,9 @@ website:
 
 format:
   html:
-    css:
-      - styles/site.scss
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles/site.scss
+    toc: true
+    toc-location: right
