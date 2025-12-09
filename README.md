@@ -1,5 +1,9 @@
 # Personal Website
 
+[![Website](https://img.shields.io/badge/Website-Visit-blue?style=for-the-badge)](https://fuleky.github.io/website)
+
+**🌐 Website:** [https://fuleky.github.io/website](https://fuleky.github.io/website)
+
 A personal website built with [Quarto](https://quarto.org).
 
 ## Building the Website
