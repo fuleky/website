@@ -1,5 +1,9 @@
 # Personal Website
 
+[![Website](https://img.shields.io/badge/Website-fuleky.github.io%2Fwebsite-blue?style=for-the-badge&logo=github)](https://fuleky.github.io/website)
+
+🌐 **View the live website:** [https://fuleky.github.io/website](https://fuleky.github.io/website)
+
 A personal website built with [Quarto](https://quarto.org).
 
 ## Building the Website
