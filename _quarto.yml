@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Your Site Title"
+  theme: jolla
   navbar:
     right:
       - text: "About"
@@ -11,9 +12,6 @@ website:
 
 format:
   html:
-    theme: 
-      light: flatly
-      dark: darkly
     css: styles/site.scss
     toc: true
     toc-location: right
