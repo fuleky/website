@@ -1,0 +1,54 @@
+/* Site-wide variables */
+$brand-bg: #0b3d91;
+$brand-accent: #ffd200;
+$bg-dark: #0b2b57;
+$title-color: #ffffff;
+
+/* Title slide */
+.title-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 6rem 1rem;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(135deg, $brand-bg 0%, darken($brand-bg, 10%) 100%);
+  color: $title-color;
+}
+
+.title-slide .site-title {
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.05;
+}
+
+.title-slide .site-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+  opacity: 0.95;
+  margin-top: 0.5rem;
+}
+
+/* Small logo placed at bottom-right of the hero */
+.title-slide .site-logo {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 110px;
+  max-width: 25%;
+  opacity: 0.95;
+}
+
+/* General site typography tweaks */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Make headings use the brand color in some places */
+h1, h2, h3 {
+  color: darken($brand-bg, 5%);
+}
+
+/* Responsive spacing for content sections */
+.container { padding: 2rem 1rem; }
