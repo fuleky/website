@@ -1,19 +1,52 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
 
 website:
-  title: "Your Site Title"
+  title: "Peter Fuleky"
+  google-analytics: "G-2H4NNSECCS"
+  # favicon: file/path/to/image.png # NOTE: that the `favicon` is a `website` level option (not under `navbar`)
   navbar:
+    # background: primary
+    # foreground: primary
+    # title: false # override printing your website `title` (e.g. "Sam Csik" on line 6) in the top left corner of your navbar
+    # logo: file/path/to/logo.png
+    # logo-alt: "Alt text for logo"
     right:
-      - text: "About"
-        href: about.qmd
+      - text: Home
+        href: index.qmd
+      - text: Bio
+        href: bio.qmd
+      - text: Research
+        href: research.qmd
+      - text: Teaching
+        href: teaching.qmd
+      - text: CV
+        href: cv.qmd
+      # - href: file/path/to/myCV.pdf # providing a relative file path to a pdf will open up a browser-based pdf viewer when clicked
+      #   target: _blank # opens link (or page) in a new browser tab
+      # - icon: github # add icons as navbar buttons
+      #   href: https://github.com/xyz
+      #   target: _blank
+
+  # page-footer:
+  #   # background: light # or `dark` or omit this option altogether (footer color will match page body color)
+  #   # left: Copyright 2025, Peter Fuleky
+  #   # right: This website is built with {{< fa heart title="a heart" >}}, [{{< fa brands github title="GitHub logo" >}}](https://github.com){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
+  #   center: This website is built with {{< fa heart title="a heart" >}}, [{{< fa brands github title="GitHub logo" >}}](https://github.com){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
 
 format:
   html:
-    theme: 
-      light: flatly
-      dark: darkly
-    css: styles/site.scss
+    # theme: 
+    #   light: cosmo
+    #   dark: solar
+    # css: styles.css
+    # theme: styles.scss
+    theme: [cosmo, styles/styles.scss]
+    # mainfont: "Open Sans"
+    # fontsize: 14px
+    # fontcolor: "#ffffffcc"
+    # linkcolor: "#004488ff"
+    # backgroundcolor: "#003333ff"
     toc: true
-    toc-location: right
+    page-layout: full

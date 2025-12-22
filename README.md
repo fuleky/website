@@ -1,50 +1,25 @@
-# Personal Website
+# Personal Website (Quarto)
 
-[![Website](https://img.shields.io/badge/Website-fuleky.github.io%2Fwebsite-blue?style=for-the-badge&logo=github)](https://fuleky.github.io/website)
+Built with [Quarto](https://quarto.org) using the Cosmo base theme plus a custom SCSS overlay in `styles/styles.scss`. The site generates into `docs/` for GitHub Pages.
 
-🌐 **View the live website:** [https://fuleky.github.io/website](https://fuleky.github.io/website)
+## Content & Navigation
 
-A personal website built with [Quarto](https://quarto.org).
+- `index.qmd` — home/landing with portrait, book link, teaching links.
+- `bio.qmd` — short biography with maps.
+- `research.qmd` — publications, books/chapters, work in progress, grants.
+- `teaching.qmd` — course links.
+- `cv.qmd` — HTML CV with PDF download link (`cv.pdf`).
 
-## Building the Website
-
-To build this website locally, you'll need to have Quarto installed. You can download it from [quarto.org](https://quarto.org/docs/get-started/).
-
-### Preview the site
-
-```bash
-quarto preview
-```
-
-This will start a local server and open the website in your browser. The preview will automatically reload when you make changes to the source files.
-
-### Render the site
+## Local build
 
 ```bash
-quarto render
+quarto render             # build the full site into docs/
+quarto preview            # live preview
+quarto render cv.qmd --to pdf   # refresh the CV PDF
 ```
 
-This will generate the static HTML files in the `docs/` directory.
+Quarto will compile the SCSS; ensure `styles/styles.scss` remains referenced in `_quarto.yml` (HTML) and in any page-level YAML that needs it for PDF output.
 
-## Project Structure
+## Deployment
 
-- `_quarto.yml` - Main configuration file for the website
-- `index.qmd` - Home page
-- `about.qmd` - About page
-- `styles.css` - Custom CSS styles
-- `docs/` - Generated HTML output (created when you render the site)
-
-## Customization
-
-You can customize the website by:
-
-1. Editing the content in `.qmd` files (Quarto markdown)
-2. Modifying the theme and layout in `_quarto.yml`
-3. Adding custom styles in `styles.css`
-4. Adding new pages and updating the navigation in `_quarto.yml`
-
-## Resources
-
-- [Quarto Documentation](https://quarto.org/docs/)
-- [Creating Quarto Websites](https://quarto.org/docs/websites/)
-- [Customizing Quarto Websites](https://quarto.org/docs/output-formats/html-themes.html)
+The output goes to `docs/`; publish via GitHub Pages on the `docs/` folder. A CI workflow should run `quarto render` (and `sass` if you introduce additional SCSS that must be precompiled for PDF CSS). Ensure any fonts required for PDF are locally available to the workflow.***
